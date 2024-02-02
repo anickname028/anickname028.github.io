@@ -1,2 +1,2 @@
-# anickname028.github.io
-W.I.P. likely won't be finished
+# silly website 4 stuff
+PS: prob won't be finished ever
