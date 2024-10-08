@@ -1,8 +1,7 @@
 <head>
-    <!-- Google fonts n stuff-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -10,27 +9,51 @@
             margin: 0;
             padding: 0;
         }
-        section {
-            color: #ffffff;
-            background-color: #000000;
-            text-align: center;
-            font-size: 6vw; /* Makes font size responsive to screen width */
-            padding: 10vh 5vw; /* Adjusts padding based on viewport height and width */
+
+        .gradient-container {
+            background: linear-gradient(to bottom, #000000, #1f0051, #4903ac);
         }
 
-        /* For smaller screens */
+        .titlesection {
+            color: #ffffff;
+            text-align: center;
+            font-size: clamp(3rem, 8vw, 70px);
+            padding: 10vh 5vw;
+        }
+
+        .small-section1 {
+            color: #ffffff;
+            height: 40vh;
+            display: block;
+            padding-left: 2vw;
+            font-size: clamp(1.5rem, 2vw, 24px);
+        }
+
+        .small-section2 {
+            color: #ffffff;
+            height: 40vh;
+            display: block;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 2vw;
+            font-size: clamp(1.5rem, 2vw, 24px);
+        }
+
         @media (max-width: 768px) {
-            section {
-                font-size: 8vw; /* Larger font size for smaller screens */
-                padding: 15vh 5vw;
+            .titlesection {
+                font-size: clamp(3rem, 10vw, 70px);
+            }
+            .small-section1 {
+                font-size: clamp(1.5rem, 6vw, 24px);
             }
         }
 
-        /* For very small screens (like mobile phones) */
         @media (max-width: 480px) {
-            section {
-                font-size: 10vw;
-                padding: 20vh 5vw;
+            .titlesection {
+                font-size: clamp(3rem, 12vw, 70px);
+            }
+            .small-section1 {
+                font-size: clamp(1.5rem, 8vw, 24px);
             }
         }
     </style>
@@ -38,7 +61,15 @@
 </head>
 
 <body>
-    <section>
-        nick's site
-    </section>
+    <div class="gradient-container">
+        <section class="titlesection">
+            nick's epic site
+        </section>
+        <section class="small-section1">
+            I am currently learning HTML, CSS, and soon JavaScript while using VS Code to do it.<br>
+            <a href="https://github.com/anickname028">My GitHub</a>
+        </section>
+        <section class="small-section2">
+        </section>
+    </div>
 </body>
